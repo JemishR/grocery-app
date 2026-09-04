@@ -1,0 +1,1 @@
+@extends('layouts.app')@section('content')<div class="card"><div class="bigemoji">🥦</div><h1>{{ $product->name }}</h1><p>{{ $product->description }}</p><small>{{ $product->unit }}</small><h2>₹{{ number_format($product->price,2) }}</h2><form method="post" action="/cart/add/{{ $product->id }}">@csrf<button class="btn">Add to cart</button></form></div>@endsection
