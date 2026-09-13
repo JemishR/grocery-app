@@ -1,0 +1,8 @@
+[build]
+  command = "composer install --no-dev --optimize-autoloader"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/laravel"
+  status = 200
